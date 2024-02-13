@@ -1,0 +1,13 @@
+<?php
+session_start();
+if(isset($_GET["logout"])){
+	session_destroy();
+	header("location:admin.php");
+}
+else
+{
+	header("location:admin.php");
+}
+
+
+?>
